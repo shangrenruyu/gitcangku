@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 倒入一些共用的视图 -->
+    <include layout="@layout/commonbar_top"/>
+
+    <com.youth.banner.Banner
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/banner"/>
+
+    <GridView
+        android:id="@+id/gv_all"
+        android:layout_height="220dp"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="30dp"
+        android:background="@drawable/bt_bg"/>
+
+
+
+</LinearLayout>

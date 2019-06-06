@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#ffffff"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true">
+
+       <RadioButton
+           android:id="@+id/rb_home"
+           style="@style/Bottom_Tap_Style"
+           android:text="首页"
+           android:checked="true"
+           android:drawableTop="@drawable/tab_home_selector"/>
+       <RadioButton
+           android:id="@+id/rb_notice"
+           style="@style/Bottom_Tap_Style"
+           android:text="通知早知道"
+           android:drawableTop="@drawable/tab_notice_selector"/>
+       <RadioButton
+           android:id="@+id/rb_mine"
+           style="@style/Bottom_Tap_Style"
+           android:text="我的党建"
+           android:drawableTop="@drawable/tab_mine_selector"/>
+
+   </RadioGroup>
+
+</RelativeLayout>
